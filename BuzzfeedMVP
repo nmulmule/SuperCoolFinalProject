@@ -1,1 +1,35 @@
-public class
+public class LifeCalculator{
+  public static void main(String[]args){
+    System.out.println("Which quiz would you like to take: Marriage, House, City, Job");
+    //put options on separate lines//
+    String quizName = TextIO.getlnString();
+    if (quizName.equals("Marriage")){
+      showMarriage();
+    } else if (quizName.equals("House")){
+      showHouse();
+    } else if (quizName.equals("City")){
+      showCity();
+    } else if (quizName.equals("Job")){
+      showJob();
+    }else{
+      System.out.println("Please pick one of the available quizzes.");
+      // this is the main which has users pick a quiz and calls to the quiz which will be in a separate mathod//
+    }
+  }
+public static void showMarriage(){
+  System.out.println ("Welcome to the Marriage Quiz. This quiz will tell you which celebrity you will marry.");
+}
+
+public static void showHouse(){
+  System.out.println ("Welcome to the House quiz. This quiz will tell you what kind of house you will live in.");
+}
+
+public static void showJob(){
+  System.out.println ("Welcome to the job quiz. This quiz will tell you what kind of job you will have.");
+}
+
+public static void showCity(){
+  System.out.println ("Welcome to the City quiz. This quiz will tell you what city you will live in.");
+}
+}
+
