@@ -22,33 +22,7 @@ public static void showMarriage(){
 
 public static void showHouse(){
   System.out.println ("Welcome to the House quiz. This quiz will tell you what kind of house you will live in.");
-  int[] house = new int[5];
-
-    System.out.println("What is your secret talent\n(1)Juggling\n(2)Stop a microwave at 1 second every time\n(3)Nothing. I'm talentless\n(4)Whistling through your nose\nEnter an integer 1-4:");
-    house[0] = TextIO.getlnInt();
-    System.out.println("If you had to become an inanimate object what would it be\n(1)A rug\n(2)A doorbell\n(3)Teddy bear\n(4)Cell phone\nEnter an integer 1-4:");
-    house[1] = TextIO.getlnInt();
-    System.out.println("Which state would you be ok with living in? Not excited or sad, just like ehhh thats fine.\n(1)Ohio\n(2)Delaware\n(3)Idaho\n(4)Iowa\nEnter an integer 1-4:");
-    house[2] = TextIO.getlnInt();
-    System.out.println("What is your hogwarts house\n(1)Slytherin\n(2)Hufflepuff\n(3)Ravenclaw\n(4)Gryffindor\nEnter an integer 1-4:");
-    house[3] = TextIO.getlnInt();
-    System.out.println("What animal would you like to scale up to the size of a horse\n(1)Squirrel\n(2)Owl\n(3)Ant\n(4)Arianna Grande\nEnter an integer 1-4:");
-    house[4] = TextIO.getlnInt();
-
-    int sum = 0;
-    for (int i=0; i<house.length; i++) {
-      sum += house[i];
-    }
-    if (sum<=10 && sum>=5) {
-      System.out.println("You're going to live in a Jimmy Choo shoe box (at least its a designer shoebox)");
-    } else if (sum<=15 && sum>=10) {
-      System.out.println("You're going to live in a mansion with a river running through the living room");
-    } else if (sum<=20 && sum>=15) {
-      System.out.println("You're going to live in an underwater cave with dolphins and manatees");
-    } else {
-      System.out.println("You're going to live in a penthouse with a ghost (Don't worry he's friendly)");
-    }
-  }
+}
 
 public static void showJob(){
   System.out.println ("Welcome to the job quiz. This quiz will tell you what kind of job you will have.");
@@ -56,6 +30,38 @@ public static void showJob(){
 
 public static void showCity(){
   System.out.println ("Welcome to the City quiz. This quiz will tell you what city you will live in.");
+  public static void showCity(){
+  System.out.println ("Welcome to the City Quiz. This quiz will tell you which city you're going to live in!");
+  int[] city = new int[5];
+
+  System.out.println("To which movie do you know all the lines by heart?\n(1)The Princess Diaries\n(2)Shrek\n(3)Home Alone\n(4)Mean Girls\nEnter an integer 1-4:");
+  city[0] = TextIO.getlnInt();
+  System.out.println("What section of the food guide pyramid would you not mind eating for the rest of your life?\n(1)Vegetables/Frutis\n(2)Dairy\n(3)Grains\n(4)Proteins\nEnter an integer 1-4:");
+  city[1] = TextIO.getlnInt();
+  System.out.println("What is your BRAND?\n(1)Gucci\n(2)Louis Vuitton\n(3)GAP\n(4)Actually, I thrift, so it's a surprised every time\nEnter an integer 1-4:");
+  city[2] = TextIO.getlnInt();
+  System.out.println("How much do you love BRANDEIS?\n(1)WOW SO MUCH THIS IS OUR HOUSE\n(2) I mean, it's like fine...\n(3)I wish that I could be somewhere else 24/7\n(4)It's growing on me!\nEnter an integer 1-4:");
+  city[3] = TextIO.getlnInt();
+  System.out.println("What type of cheese are you?\n(1)Cheddar!(because I'm everyone's favorite)\n(2)Gouda because I'm SMOKIN'\n(3)Brie all day every day\n(4)I'm lactose intolerant :/\nEnter an integer 1-4:");
+  city[4] = TextIO.getlnInt();
+
+  int sum = 0;
+  for (int i=0; i<city.length; i++) {
+    sum += city[i];
+  }
+
+  if (sum<=10 && sum>=5) {
+    System.out.println("Bonjour mon ami! You're moving to Paris, the city of love!");
+  } else if (sum<=15 && sum>=10) {
+    System.out.println("Konichiwa! You get to live in Tokyo so you can eat all the ramen you want!");
+  } else if (sum<=20 && sum>=15) {
+    System.out.println("Namaste! You got cast in a Bollywood movie and are moving to Mumbai!");
+  } else {
+    System.out.println("What's GOOD you loved Brandeis so much that you decided to live in Waltham forever!");
+  }
+}
+}
+
 }
 }
 
