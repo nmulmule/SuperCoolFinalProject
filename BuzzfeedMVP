@@ -60,33 +60,33 @@ public static void showHouse(){
 public static void showCity(){
   System.out.println ("Welcome to the City quiz. This quiz will tell you what city you will live in.");
   public static void showCity(){
-  System.out.println ("Welcome to the City Quiz. This quiz will tell you which city you're going to live in!");
-  int[] city = new int[5];
-
-  System.out.println("To which movie do you know all the lines by heart?\n(1)The Princess Diaries\n(2)Shrek\n(3)Home Alone\n(4)Mean Girls\nEnter an integer 1-4:");
-  city[0] = TextIO.getlnInt();
-  System.out.println("What section of the food guide pyramid would you not mind eating for the rest of your life?\n(1)Vegetables/Frutis\n(2)Dairy\n(3)Grains\n(4)Proteins\nEnter an integer 1-4:");
-  city[1] = TextIO.getlnInt();
-  System.out.println("What is your BRAND?\n(1)Gucci\n(2)Louis Vuitton\n(3)GAP\n(4)Actually, I thrift, so it's a surprised every time\nEnter an integer 1-4:");
-  city[2] = TextIO.getlnInt();
-  System.out.println("How much do you love BRANDEIS?\n(1)WOW SO MUCH THIS IS OUR HOUSE\n(2) I mean, it's like fine...\n(3)I wish that I could be somewhere else 24/7\n(4)It's growing on me!\nEnter an integer 1-4:");
-  city[3] = TextIO.getlnInt();
-  System.out.println("What type of cheese are you?\n(1)Cheddar!(because I'm everyone's favorite)\n(2)Gouda because I'm SMOKIN'\n(3)Brie all day every day\n(4)I'm lactose intolerant :/\nEnter an integer 1-4:");
-  city[4] = TextIO.getlnInt();
-
-  int sum = 0;
-  for (int i=0; i<city.length; i++) {
-    sum += city[i];
+    System.out.println ("Welcome to the City Quiz. This quiz will tell you which city you're going to live in!");
+    int[] city = new int[5];
+    
+    System.out.println("To which movie do you know all the lines by heart?\n(1)The Princess Diaries\n(2)Shrek\n(3)Home Alone\n(4)Mean Girls\nEnter an integer 1-4:");
+    city[0] = TextIO.getlnInt();
+    System.out.println("What section of the food guide pyramid would you not mind eating for the rest of your life?\n(1)Vegetables/Frutis\n(2)Dairy\n(3)Grains\n(4)Proteins\nEnter an integer 1-4:");
+    city[1] = TextIO.getlnInt();
+    System.out.println("What is your BRAND?\n(1)Gucci\n(2)Louis Vuitton\n(3)GAP\n(4)Actually, I thrift, so it's a surprised every time\nEnter an integer 1-4:");
+    city[2] = TextIO.getlnInt();
+    System.out.println("How much do you love BRANDEIS?\n(1)WOW SO MUCH, THIS IS OUR HOUSE!\n(2) I mean, it's like fine...\n(3)I wish that I could be somewhere else 24/7\n(4)It's growing on me!\nEnter an integer 1-4:");
+    city[3] = TextIO.getlnInt();
+    System.out.println("What type of cheese are you?\n(1)Cheddar!(because I'm everyone's favorite)\n(2)Gouda because I'm SMOKIN'\n(3)Brie all day every day\n(4)I'm lactose intolerant :/\nEnter an integer 1-4:");
+    city[4] = TextIO.getlnInt();
+    
+    int sum = 0;
+    for (int i=0; i<city.length; i++) {
+      sum += city[i];
+    }
+    
+    if (sum<=10 && sum>=5) {
+      System.out.println("Bonjour mon ami! You're moving to Paris, the city of love!");
+    } else if (sum<=15 && sum>=10) {
+      System.out.println("Konichiwa! You get to live in Tokyo so you can eat all the ramen you want!");
+    } else if (sum<=20 && sum>=15) {
+      System.out.println("Namaste! You got cast in a Bollywood movie and are moving to Mumbai!");
+    } else {
+      System.out.println("What's GOOD you loved Brandeis so much that you decided to live in Waltham forever!");
+    }
   }
-
-  if (sum<=10 && sum>=5) {
-    System.out.println("Bonjour mon ami! You're moving to Paris, the city of love!");
-  } else if (sum<=15 && sum>=10) {
-    System.out.println("Konichiwa! You get to live in Tokyo so you can eat all the ramen you want!");
-  } else if (sum<=20 && sum>=15) {
-    System.out.println("Namaste! You got cast in a Bollywood movie and are moving to Mumbai!");
-  } else {
-    System.out.println("What's GOOD you loved Brandeis so much that you decided to live in Waltham forever!");
-  }
-}
 }
