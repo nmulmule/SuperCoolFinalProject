@@ -28,9 +28,36 @@ public static void showHouse(){
   System.out.println ("Welcome to the House quiz. This quiz will tell you what kind of house you will live in.");
 }
 
-public static void showJob(){
-  System.out.println ("Welcome to the job quiz. This quiz will tell you what kind of job you will have.");
-}
+  public static void showJob(){
+    System.out.println ("Welcome to the job quiz. This quiz will tell you what kind of job you will have.");
+    int[] job = new int[5];
+    
+    System.out.println("What is a body part you wouldn't mind using\n(1)Every other finger\n(2)One leg\n(3)Nose\n(4)Thumbs\nEnter an integer 1-4:");
+    job[0] = TextIO.getlnInt();
+    System.out.println("What sea animal wold you like as a pet\n(1)Dolphin\n(2)Lobster\n(3)Octopus\n(4)Blue Whale\nEnter an integer 1-4:");
+    job[1] = TextIO.getlnInt();
+    System.out.println("What is your favorite one-hit-wonder\n(1)“Somebody that I Used to Know” - Gotye\n(2)“Who let the Dogs Out?” - Baha Men\n(3)“Mambo No. 5” - Lou Bega\n(4)“Closing Time” - Semisonic\nEnter an integer 1-4:");
+    job[2] = TextIO.getlnInt();
+    System.out.println("What Doritos flavor do you most identify with\n(1)Nacho Chese\n(2)Cool Ranch\n(3)bLaZe\n(4)Spicy Nacho\nEnter an integer 1-4:");
+    job[3] = TextIO.getlnInt();
+    System.out.println("What article of clothing are you\n(1)Cozy Sweater\n(2)Socks\n(3)Joggers or Leggings\n(4)Blazer\nEnter an integer 1-4:");
+    job[4] = TextIO.getlnInt();
+    
+    int sum = 0;
+    for (int i=0; i<job.length; i++) {
+      sum += job[i];
+    }
+    
+    if (sum<=10 && sum>=5) {
+      System.out.println("\nI hope you're not allergic to flowers... you'll be a florist!!\n");
+    } else if (sum<=15 && sum>=10) {
+      System.out.println("\nCongrats! You will be the president!!\n");
+    } else if (sum<=20 && sum>=15) {
+      System.out.println("\nYou will be a dog walker... a dream come true!!\n");
+    } else {
+      System.out.println("\nYou will teach Cosi11A at Brandeis University!!\n");
+    }
+  }
 
 public static void showCity(){
   System.out.println ("Welcome to the City quiz. This quiz will tell you what city you will live in.");
