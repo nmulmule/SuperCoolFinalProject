@@ -1,19 +1,23 @@
 public class LifeCalculator{
   public static void main(String[]args){
-    System.out.println("Which quiz would you like to take: Marriage, House, City, Job");
-    //put options on separate lines//
-    String quizName = TextIO.getlnString();
-    if (quizName.equals("Marriage")){
-      showMarriage();
-    } else if (quizName.equals("House")){
-      showHouse();
-    } else if (quizName.equals("City")){
-      showCity();
-    } else if (quizName.equals("Job")){
-      showJob();
-    }else{
-      System.out.println("Please pick one of the available quizzes.");
-      // this is the main which has users pick a quiz and calls to the quiz which will be in a separate mathod//
+    String quizName;
+    do {
+      System.out.println("Which quiz would you like to take:\nMarriage\nHouse\nCity\nJob\nIf you would like to leave this game, type bye");
+      String input = TextIO.getlnString();
+      quizName = input.toUpperCase();
+      if (quizName.equals("MARRIAGE")){
+        showMarriage();
+      } else if (quizName.equals("HOUSE")){
+        showHouse();
+      } else if (quizName.equals("CITY")){
+        showCity();
+      } else if (quizName.equals("JOB")){
+        showJob();
+      }
+    } while (!"BYE".equals(quizName));
+  }
+  // this is the main which has users pick a quiz and calls to the quiz which will be in a separate method
+
     }
   }
 public static void showMarriage(){
