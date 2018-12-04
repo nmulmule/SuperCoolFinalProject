@@ -18,8 +18,6 @@ public class LifeCalculator{
   }
   // this is the main which has users pick a quiz and calls to the quiz which will be in a separate method
 
-    }
-  }
 public static void showMarriage(){
   System.out.println ("Welcome to the Marriage Quiz. This quiz will tell you which celebrity you will marry.");
 }
@@ -92,7 +90,3 @@ public static void showCity(){
   }
 }
 }
-
-}
-}
-
