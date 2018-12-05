@@ -20,6 +20,34 @@ public class LifeCalculator{
 
 public static void showMarriage(){
   System.out.println ("Welcome to the Marriage Quiz. This quiz will tell you which celebrity you will marry.");
+    int[] marriage = new int[5];
+
+    System.out.println("What is your favorite color\n(1)Red\n(2)Green\n(3)Purple\n(4)Blue\nEnter an integer 1-4:");
+    marriage[0] = TextIO.getlnInt();
+    System.out.println("What is your favorite dessert\n(1)Cake\n(2)Ice Cream\n(3)Choclate Chip Cookie\n(4)Fruit salad\nEnter an integer 1-4:");
+    marriage[1] = TextIO.getlnInt();
+    System.out.println("What animal best represents your personality\n(1)Butterfly\n(2)Koala\n(3)Kinkajou\n(4)Lion\nEnter an integer 1-4:");
+    marriage[2] = TextIO.getlnInt();
+    System.out.println("If you had to replace your hands with any object found in your house, what would you choose\n(1)Knives\n(2)Tongs\n(3)Toilet Seat\n(4)Television\nEnter an integer 1-4:");
+    marriage[3] = TextIO.getlnInt();
+    System.out.println("If you could pay money to never hear a song again, what song would you choose\n(1)Call Me Maybe\n(2)Party in the USA\n(3)Every OL Dance Song Ever\n(4)Baby by JB\nEnter an integer 1-4:");
+    marriage[4] = TextIO.getlnInt();
+
+    int sum = 0;
+    for (int i=0; i<marriage.length; i++) {
+      sum += marriage[i];
+    }
+
+    if (sum<=10 && sum>=5) {
+      System.out.println("Yoooo you're gonna get hitched to Tom Holland");
+    } else if (sum<=15 && sum>=10) {
+      System.out.println("LUCKYYYY you get to marry Chris Hemsworth");
+    } else if (sum<=20 && sum>=15) {
+      System.out.println("ughhh jealous Rihanna is your future bride");
+    } else {
+      System.out.println("WHAT YOU'RE GONNA MARRY QUEEN BEY");
+    }
+  }
 }
 
 public static void showHouse(){
