@@ -48,7 +48,7 @@ public static void showMarriage(){
       System.out.println("WHAT YOU'RE GONNA MARRY QUEEN BEY");
     }
   }
-}
+
 
 public static void showHouse(){
   System.out.println ("Welcome to the House quiz. This quiz will tell you what kind of house you will live in.");
