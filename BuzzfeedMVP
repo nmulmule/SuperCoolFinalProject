@@ -1,6 +1,8 @@
 public class LifeCalculator{
   public static void main(String[]args){
     String quizName;
+    System.out.println("Welcome to the Life Calculator! Take any of the quizzes below to find out your future!");
+    System.out.println("-----------------------------------------------");
     do {
       System.out.println("Which quiz would you like to take:\nMarriage\nHouse\nCity\nJob\nIf you would like to leave this game, type bye");
       String input = TextIO.getlnString();
