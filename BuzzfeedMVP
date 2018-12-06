@@ -2,8 +2,8 @@ public class LifeCalculator{
   public static void main(String[]args){
     String quizName;
     System.out.println("Welcome to the Life Calculator! Take any of the quizzes below to find out your future!");
-    System.out.println("-----------------------------------------------");
     do {
+      System.out.println("-----------------------------------------------");
       System.out.println("Which quiz would you like to take:\nMarriage\nHouse\nCity\nJob\nIf you would like to leave this game, type bye");
       String input = TextIO.getlnString();
       quizName = input.toUpperCase();
@@ -60,9 +60,9 @@ public static void showHouse(){
     System.out.println ("Welcome to the job quiz. This quiz will tell you what kind of job you will have.");
     int[] job = new int[5];
     
-    System.out.println("What is a body part you wouldn't mind using\n(1)Every other finger\n(2)One leg\n(3)Nose\n(4)Thumbs\nEnter an integer 1-4:");
+    System.out.println("What is a body part you wouldn't mind losing\n(1)Every other finger\n(2)One leg\n(3)Nose\n(4)Thumbs\nEnter an integer 1-4:");
     job[0] = TextIO.getlnInt();
-    System.out.println("What sea animal wold you like as a pet\n(1)Dolphin\n(2)Lobster\n(3)Octopus\n(4)Blue Whale\nEnter an integer 1-4:");
+    System.out.println("What sea animal would you like as a pet\n(1)Dolphin\n(2)Lobster\n(3)Octopus\n(4)Blue Whale\nEnter an integer 1-4:");
     job[1] = TextIO.getlnInt();
     System.out.println("What is your favorite one-hit-wonder\n(1)“Somebody that I Used to Know” - Gotye\n(2)“Who let the Dogs Out?” - Baha Men\n(3)“Mambo No. 5” - Lou Bega\n(4)“Closing Time” - Semisonic\nEnter an integer 1-4:");
     job[2] = TextIO.getlnInt();
